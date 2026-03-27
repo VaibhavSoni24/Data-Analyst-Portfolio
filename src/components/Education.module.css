@@ -1,0 +1,188 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6dddff;
+  margin-bottom: 1.25rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Education card */
+.eduCard {
+  padding: 1.75rem;
+}
+
+.eduTop {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.eduIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.degree {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e2e4f6;
+  line-height: 1.35;
+  margin-bottom: 0.25rem;
+}
+
+.institution {
+  font-size: 0.88rem;
+  color: #6dddff;
+  font-weight: 500;
+  margin-bottom: 0.15rem;
+}
+
+.affiliation {
+  font-size: 0.78rem;
+  color: #717584;
+}
+
+.eduMeta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.metaLabel {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #717584;
+  font-weight: 500;
+}
+
+.metaValue {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #e2e4f6;
+}
+
+.cgpaTrend {
+  margin-bottom: 1.25rem;
+}
+
+.trendLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #717584;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.trendBar {
+  height: 5px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.trendFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1s ease;
+}
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* Certifications */
+.certList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.certCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  gap: 1rem;
+}
+
+.certCard:hover {
+  transform: translateX(4px);
+  border-color: rgba(109,221,255,0.2);
+}
+
+.certLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.certIcon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.certTitle {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #e2e4f6;
+  margin-bottom: 0.15rem;
+}
+
+.certIssuer {
+  font-size: 0.75rem;
+  color: #717584;
+}
+
+.certBadge {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .eduMeta { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .eduMeta { grid-template-columns: 1fr 1fr; }
+}

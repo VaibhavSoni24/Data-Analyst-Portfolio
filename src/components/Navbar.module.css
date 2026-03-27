@@ -1,0 +1,135 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1.25rem 0;
+  transition: all 0.3s ease;
+}
+
+.scrolled {
+  background: rgba(10, 14, 26, 0.85);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(68, 71, 86, 0.2);
+  padding: 0.85rem 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e2e4f6;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logoHighlight {
+  color: #6dddff;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: block;
+  padding: 0.4rem 0.85rem;
+  color: #a7aabb;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #e2e4f6;
+  background: rgba(109, 221, 255, 0.06);
+}
+
+.activeLink {
+  color: #6dddff !important;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 1001;
+}
+
+.burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #a7aabb;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.burgerLineOpen1 {
+  transform: translateY(7px) rotate(45deg) !important;
+  background: #6dddff !important;
+}
+.burgerLineOpen2 {
+  opacity: 0 !important;
+}
+.burgerLineOpen3 {
+  transform: translateY(-7px) rotate(-45deg) !important;
+  background: #6dddff !important;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 14, 26, 0.97);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    transform: translateX(0);
+  }
+
+  .link {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .inner {
+    padding: 0 1.25rem;
+  }
+}

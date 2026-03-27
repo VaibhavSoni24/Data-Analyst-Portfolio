@@ -1,0 +1,171 @@
+.footer {
+  background: var(--bg-low);
+  border-top: 1px solid rgba(68,71,86,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 200px;
+  background: radial-gradient(ellipse at top, rgba(109,221,255,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e2e4f6;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+}
+
+.logoAccent { color: #6dddff; }
+
+.tagline {
+  font-size: 0.88rem;
+  color: #717584;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: #a7aabb;
+  margin-bottom: 0.5rem;
+}
+
+.colTitle {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6dddff;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  color: #a7aabb;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #6dddff;
+  transform: translateX(3px);
+}
+
+.linkArrow {
+  color: #444756;
+  transition: color 0.2s ease;
+}
+
+.link:hover .linkArrow { color: #6dddff; }
+
+.socialGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.socialItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: #a7aabb;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.socialItem:hover {
+  color: #6dddff;
+  background: rgba(109,221,255,0.06);
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(68,71,86,0.4), transparent);
+  margin-bottom: 1.75rem;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.copy {
+  font-size: 0.78rem;
+  color: #717584;
+}
+
+.updated {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: #717584;
+}
+
+.updatedDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6dddff;
+  opacity: 0.6;
+}
+
+.tech {
+  font-size: 0.75rem;
+  color: #444756;
+}
+
+@media (max-width: 900px) {
+  .top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 540px) {
+  .top { grid-template-columns: 1fr; gap: 2rem; }
+  .bottom { flex-direction: column; align-items: flex-start; }
+  .container { padding: 2.5rem 1.25rem 1.5rem; }
+}
