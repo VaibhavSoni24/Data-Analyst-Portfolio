@@ -100,13 +100,6 @@ export default function Hero() {
               className={styles.photo}
               priority
             />
-            {/* Floating stat cards */}
-            {stats.map((stat, i) => (
-              <div key={stat.label} className={`${styles.statCard} ${styles[`statCard${i}`]}`}>
-                <span className={styles.statValue}>{stat.value}</span>
-                <span className={styles.statLabel}>{stat.label}</span>
-              </div>
-            ))}
           </div>
         </div>
       </div>
