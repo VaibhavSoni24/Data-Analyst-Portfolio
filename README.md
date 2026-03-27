@@ -4,7 +4,7 @@ A modern, single-page portfolio website built with Next.js and TypeScript to sho
 
 ## Live Portfolio
 
-- Production: https://vaibhavsonidataanalystportfolio.vercel.app
+- Production: <https://vaibhavsonidataanalystportfolio.vercel.app>
 
 ## Highlights
 
@@ -13,9 +13,9 @@ A modern, single-page portfolio website built with Next.js and TypeScript to sho
 - Hero section with profile, social links, and resume download.
 - Experience timeline with role-wise impact points.
 - Project showcase with category tabs:
-	- Flagship
-	- Notable
-	- Exploratory
+- Flagship
+- Notable
+- Exploratory
 - Achievements gallery with hackathon highlights and photos.
 - Education and certification section with academic metrics.
 - Skill matrix with grouped proficiency bars and tool badges.
@@ -33,26 +33,26 @@ A modern, single-page portfolio website built with Next.js and TypeScript to sho
 
 ```text
 src/
-	app/
-		globals.css
-		layout.tsx
-		page.tsx
-	components/
-		Navbar.tsx
-		Hero.tsx
-		Experience.tsx
-		Projects.tsx
-		Achievements.tsx
-		Education.tsx
-		Skills.tsx
-		Footer.tsx
+ app/
+  globals.css
+  layout.tsx
+  page.tsx
+ components/
+  Navbar.tsx
+  Hero.tsx
+  Experience.tsx
+  Projects.tsx
+  Achievements.tsx
+  Education.tsx
+  Skills.tsx
+  Footer.tsx
 public/
-	Me.jpeg
-	Vaibhav_Soni_DataAnalyst_Resume.pdf
-	tiesummit.jpeg
-	sphinxmnit.jpeg
-	enigmariet.jpeg
-	hackjklu.jpeg
+ Me.jpeg
+ Vaibhav_Soni_DataAnalyst_Resume.pdf
+ tiesummit.jpeg
+ sphinxmnit.jpeg
+ enigmariet.jpeg
+ hackjklu.jpeg
 ```
 
 ## Getting Started
@@ -69,7 +69,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000 in your browser.
+Open <http://localhost:3000> in your browser.
 
 ### 3) Build for production
 
@@ -96,7 +96,7 @@ npm run start
 
 - `next.config.ts` uses `images.unoptimized: true` for simplified static image behavior.
 - Resume file path currently used in multiple components:
-	- `/Vaibhav_Soni_DataAnalyst_Resume.pdf`
+- `/Vaibhav_Soni_DataAnalyst_Resume.pdf`
 
 ## Deployment
 
@@ -110,6 +110,6 @@ The app is deployment-ready for Vercel.
 
 Vaibhav Soni
 
-- GitHub: https://github.com/VaibhavSoni24
-- LinkedIn: https://linkedin.com/in/vaibhav-soni-867836285
-- Email: vaibhavsoni280506@gmail.com
+- GitHub: <https://github.com/VaibhavSoni24>
+- LinkedIn: <https://linkedin.com/in/vaibhav-soni-867836285>
+- Email: <vaibhavsoni280506@gmail.com>
